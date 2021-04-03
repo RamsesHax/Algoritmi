@@ -1,22 +1,9 @@
 package hackerranksolving;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
-public class Main {
-
-	public static void main(String[] args) {
-		int[][] test = {{0 ,1 ,2 ,3 ,4 , 5},
-						{6 ,7 ,8 ,9 ,10,11},
-						{12,13,14,15,16,17},
-						{18,19,20,21,22,23},
-						{24,25,26,27,28,29},
-						{30,31,32,33,34,35}} ;
-		
-		System.out.println(hourglassSum(test));
-		
-	}
-	static int hourglassSum(int[][] arr) {
+public class hourglassSum {
+static int hourglassSumAlgo(int[][] arr) {
 		
 		int[] valori = new int[36];		int m = 0 ;		int sumatemp = 0 ;
 			
@@ -28,8 +15,9 @@ public class Main {
 					}
 				}
 			}
-Stack<Integer> sume = new Stack<Integer>();
-m=0; 	int limita1 = 7; 	int start1 = 0; 	int counter1 =2; 	int counter2=3;
+			
+		Stack<Integer> sume = new Stack<Integer>();
+		m=0; 	int limita1 = 7; 	int start1 = 0; 	int counter1 =2; 	int counter2=3;
 			
 	for(int d = 0 ; d < 4 ; d++) {		
 		for(int j = 0 ; j < 4 ; j ++) {
@@ -50,5 +38,6 @@ m=0; 	int limita1 = 7; 	int start1 = 0; 	int counter1 =2; 	int counter2=3;
 	
 	return sume.get(sume.size()-1);
 	}
+		
+		
 }
-
