@@ -3,6 +3,17 @@ package hackerranksolving;
 import java.util.Stack;
 
 public class hourglassSum {
+	
+	//itereaza in forma de clepsidra intr-un array 6x6
+					//returneaza clepsidra cu cea mai mare suma
+					//ex :       1 1 1 0 0 0
+				 	//			 0 1 0 0 0 0				       x x x
+					//			 1 1 1 0 0 0 ---------> return '7' forma:	 x
+					// 			 0 0 0 0 0 0				       x x x
+					// 			 0 0 0 0 0 0
+					// 			 0 0 0 0 0 0
+	
+		
 static int hourglassSumAlgo(int[][] arr) {
 		
 		int[] valori = new int[36];		int m = 0 ;		int sumatemp = 0 ;
