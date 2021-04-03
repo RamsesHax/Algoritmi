@@ -12,7 +12,7 @@ public class hourglassSum {
 					// 			 0 0 0 0 0 0				       x x x
 					// 			 0 0 0 0 0 0
 					// 			 0 0 0 0 0 0
-	
+					//			 0 0 0 0 0 0
 		
 static int hourglassSumAlgo(int[][] arr) {
 		
