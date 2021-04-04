@@ -11,11 +11,17 @@ public class Main {
 						{30,31,32,33,34,35}} ;
 		int[] testPair = {1,1,3,3,4,5,6,5,5,5,5};
 		int[] testCloudsJump= {0,1,0};
-
+		int[] rotLeft = {1, 2, 3, 4, 5};
+		
 		System.out.println(hourglassSum.hourglassSumAlgo(test));
 		System.out.println(pair.find(testPair));
 		System.out.println(clouds.jump(testCloudsJump));
 		System.out.println(InfiniteString.find("abaaacc", 47));
+		
+		rotLeft = LeftRotation.rotLeft(rotLeft,2);
+		for (int i = 0 ; i<rotLeft.length ; i++) {
+			System.out.println(rotLeft[i]);
+		}
 	}
 	
 }
