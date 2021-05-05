@@ -1,7 +1,10 @@
 package hackerranksolving;
 
 public class Main {
-
+		
+	//se va decomenta setul de cod de sub numele algoritmului ce vrea sa se testeze
+	//detalii despre fiecare algoritm in parte se gasesc in clasa respectivului  algoritm
+		
 	public static void main(String[] args) {
 		int[][] test = {{0 ,1 ,2 ,3 ,4 , 5},
 						{6 ,7 ,8 ,9 ,10,11},
@@ -12,16 +15,31 @@ public class Main {
 		int[] testPair = {1,1,3,3,4,5,6,5,5,5,5};
 		int[] testCloudsJump= {0,1,0};
 		int[] rotLeft = {1, 2, 3, 4, 5};
+		int[] newYearChaos = {1, 2, 5, 3, 7, 8, 6, 4};
 		
-		System.out.println(hourglassSum.hourglassSumAlgo(test));
-		System.out.println(pair.find(testPair));
-		System.out.println(clouds.jump(testCloudsJump));
-		System.out.println(InfiniteString.find("abaaacc", 47));
 		
-		rotLeft = LeftRotation.rotLeft(rotLeft,2);
-		for (int i = 0 ; i<rotLeft.length ; i++) {
-			System.out.println(rotLeft[i]);
-		}
+		//----------hourglassSum
+		//System.out.println(hourglassSum.hourglassSumAlgo(test));
+		
+		//----------pair
+		//System.out.println(pair.find(testPair));
+		
+		//----------clouds
+		//System.out.println(clouds.jump(testCloudsJump));
+		
+		//----------InfiniteString
+		//System.out.println(InfiniteString.find("abaaacc", 47));
+		
+		
+		//-----LeftRotation
+		//rotLeft = LeftRotation.rotLeft(rotLeft,2);
+		//for (int i = 0 ; i<rotLeft.length ; i++) {
+		//	System.out.println(rotLeft[i]);
+		//}
+		
+		
+		//-------NewYearChaos
+		//NewYearChaos.minimumBribes(newYearChaos);
 	}
 	
 }
