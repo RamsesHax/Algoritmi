@@ -1,7 +1,7 @@
 import java.lang.Math;
 import java.util.Stack;
 public class Main {
-
+ 
 	public static void main(String[] args) {
 		for(int i=0 ; i<49001 ; i++) {	// returneaza cel mai mic numar la cea mai mica putere (dupa descompunere)
 		System.out.println(putere (i)); // ex1: 49000= 5^3 * 7^2 * 2^3 -> return 7
